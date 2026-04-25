@@ -15,20 +15,23 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
 <style>
   :root {
-    --cream: #f4ede2;
-    --cream-deep: #ebe1d1;
-    --paper: #faf6ee;
+    --cream: #fff8f0;
+    --cream-deep: #ffecd6;
+    --paper: #fffcf9;
     --ink: #1a1a1a;
     --ink-soft: #2a2a2a;
     --muted: #6b6357;
-    --line: #d6cab6;
+    --line: #f0dcc8;
+    --accent: #f97316;
+    --accent-dark: #ea580c;
+    --accent-yellow: #fbbf24;
 
-    --font-display: 'Fraunces', 'Times New Roman', serif;
-    --font-body: 'Manrope', system-ui, sans-serif;
+    --font-display: 'Syne', system-ui, sans-serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
     --max: 760px;
   }
 
@@ -66,8 +69,8 @@
   .nav {
     position: sticky;
     top: 0;
-    padding: 16px 24px;
-    background: rgba(250, 246, 238, 0.85);
+    padding: 8px 24px;
+    background: rgba(255, 252, 249, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     z-index: 100;
@@ -104,18 +107,19 @@
   }
   .nav-back {
     font-size: 13px;
-    font-weight: 500;
-    color: var(--ink);
+    font-weight: 600;
+    color: white;
     text-decoration: none;
-    padding: 8px 14px;
-    border: 1px solid var(--ink);
+    padding: 8px 18px;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    border: none;
     border-radius: 100px;
     transition: all 0.2s;
     display: inline-flex;
     align-items: center;
     gap: 6px;
   }
-  .nav-back:hover { background: var(--ink); color: var(--paper); }
+  .nav-back:hover { opacity: 0.9; transform: translateY(-1px); }
   .nav-back svg { width: 12px; height: 12px; }
 
   /* HEADER */
@@ -136,18 +140,19 @@
   .eyebrow::before {
     content: '';
     width: 24px;
-    height: 1px;
-    background: var(--muted);
+    height: 2px;
+    background: var(--accent);
+    border-radius: 2px;
   }
   h1 {
     font-family: var(--font-display);
-    font-weight: 300;
+    font-weight: 700;
     font-size: clamp(40px, 8vw, 64px);
     line-height: 1.02;
     letter-spacing: -0.03em;
     color: var(--ink);
   }
-  h1 em { font-style: italic; font-weight: 400; }
+  h1 em { font-style: normal; font-weight: 800; color: var(--accent); }
 
   /* CONTENT */
   main { padding: 20px 0 80px; }
@@ -158,13 +163,13 @@
   .legal-section:first-child { border-top: none; padding-top: 12px; }
   h2 {
     font-family: var(--font-display);
-    font-weight: 400;
+    font-weight: 700;
     font-size: 24px;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.01em;
     margin-bottom: 16px;
     color: var(--ink);
   }
-  h2 em { font-style: italic; }
+  h2 em { font-style: normal; font-weight: 800; color: var(--accent); }
   h3 {
     font-family: var(--font-body);
     font-weight: 600;
@@ -196,8 +201,8 @@
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: var(--muted);
-    font-weight: 500;
+    color: var(--accent);
+    font-weight: 700;
   }
   .info-value {
     font-size: 15px;
@@ -227,7 +232,7 @@
   /* FOOTER */
   footer {
     padding: 32px 0;
-    background: var(--cream);
+    background: var(--cream-deep);
     border-top: 1px solid var(--line);
     margin-top: 0;
   }
@@ -252,7 +257,7 @@
 
   @media (min-width: 768px) {
     .container { padding: 0 48px; }
-    .nav { padding: 20px 48px; }
+    .nav { padding: 8px 48px; }
     header.page-header { padding: 100px 0 60px; }
     h2 { font-size: 28px; }
     .footer-inner { padding: 0 48px; }
