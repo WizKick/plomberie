@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#1a1a1a" />
+<meta name="robots" content="noindex, follow" />
+
+<title>Mentions légales — Elite Plomberie</title>
+<meta name="description" content="Mentions légales du site Elite Plomberie, plombier haut de gamme à Levallois-Perret." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --cream: #f4ede2;
+    --cream-deep: #ebe1d1;
+    --paper: #faf6ee;
+    --ink: #1a1a1a;
+    --ink-soft: #2a2a2a;
+    --muted: #6b6357;
+    --line: #d6cab6;
+
+    --font-display: 'Fraunces', 'Times New Roman', serif;
+    --font-body: 'Manrope', system-ui, sans-serif;
+    --max: 760px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-body);
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.65;
+    overflow-x: hidden;
+    font-size: 16px;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(26,26,26,0.025) 1px, transparent 1px);
+    background-size: 3px 3px;
+    z-index: 1;
+    opacity: 0.6;
+  }
+
+  .container {
+    width: 100%;
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* NAV */
+  .nav {
+    position: sticky;
+    top: 0;
+    padding: 16px 24px;
+    background: rgba(250, 246, 238, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 100;
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .logo-mark {
+    width: 28px; height: 28px;
+    border: 1.5px solid var(--ink);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: var(--font-body);
+  }
+  .nav-back {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink);
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid var(--ink);
+    border-radius: 100px;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .nav-back:hover { background: var(--ink); color: var(--paper); }
+  .nav-back svg { width: 12px; height: 12px; }
+
+  /* HEADER */
+  header.page-header {
+    padding: 80px 0 40px;
+  }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--muted);
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: clamp(40px, 8vw, 64px);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+  }
+  h1 em { font-style: italic; font-weight: 400; }
+
+  /* CONTENT */
+  main { padding: 20px 0 80px; }
+  .legal-section {
+    padding: 32px 0;
+    border-top: 1px solid var(--line);
+  }
+  .legal-section:first-child { border-top: none; padding-top: 12px; }
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.015em;
+    margin-bottom: 16px;
+    color: var(--ink);
+  }
+  h2 em { font-style: italic; }
+  h3 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 8px;
+    margin-top: 20px;
+  }
+  h3:first-of-type { margin-top: 0; }
+  p {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin-bottom: 12px;
+    line-height: 1.7;
+  }
+  p:last-child { margin-bottom: 0; }
+  .info-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .info-row:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+  .info-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .info-value {
+    font-size: 15px;
+    color: var(--ink);
+  }
+  a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; transition: text-decoration-color 0.2s; }
+  a:hover { text-decoration-color: var(--ink); }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  ul li {
+    color: var(--ink-soft);
+    font-size: 15px;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+    line-height: 1.7;
+  }
+  ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--muted);
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 32px 0;
+    background: var(--cream);
+    border-top: 1px solid var(--line);
+    margin-top: 0;
+  }
+  .footer-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .footer-inner a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .footer-inner a:hover { color: var(--ink); }
+
+  @media (min-width: 768px) {
+    .container { padding: 0 48px; }
+    .nav { padding: 20px 48px; }
+    header.page-header { padding: 100px 0 60px; }
+    h2 { font-size: 28px; }
+    .footer-inner { padding: 0 48px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">E</span>
+      <span>Elite Plomberie</span>
+    </a>
+    <a href="index.html" class="nav-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Retour
+    </a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <div class="eyebrow">Informations légales</div>
+    <h1>Mentions <em>légales.</em></h1>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <section class="legal-section">
+      <h2>Éditeur du site</h2>
+      <div class="info-row">
+        <span class="info-label">Raison sociale</span>
+        <span class="info-value">ELITE PLOMBERIE</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Forme juridique</span>
+        <span class="info-value">SASU — Société par actions simplifiée unipersonnelle</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Capital social</span>
+        <span class="info-value">100,00 €</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Adresse du siège</span>
+        <span class="info-value">39 rue Gabriel Péri, 92300 Levallois-Perret, France</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">SIREN</span>
+        <span class="info-value">850 729 815</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">SIRET (siège)</span>
+        <span class="info-value">850 729 815 00017</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Numéro RCS</span>
+        <span class="info-value">850 729 815 R.C.S. Nanterre — Inscrit le 14/05/2019</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Numéro de TVA intracommunautaire</span>
+        <span class="info-value">FR50850729815</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Code APE / NAF</span>
+        <span class="info-value">43.22A — Travaux d'installation d'eau et de gaz en tous locaux</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Directeur de la publication</span>
+        <span class="info-value">Le président de la société</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Contact</span>
+        <span class="info-value">Via le formulaire de devis ou WhatsApp depuis la page d'accueil</span>
+      </div>
+    </section>
+
+    <section class="legal-section">
+      <h2>Hébergement</h2>
+      <p>Le site est hébergé par <strong>À compléter</strong> — adresse de l'hébergeur, contact technique. Renseignez ici le nom et les coordonnées de votre hébergeur (par exemple OVH, o2switch, Vercel, Netlify, etc.).</p>
+    </section>
+
+    <section class="legal-section">
+      <h2>Activité & assurance</h2>
+      <p>ELITE PLOMBERIE est une entreprise artisanale spécialisée dans les travaux d'installation d'eau et de gaz en tous locaux (code APE 43.22A), intervenant à Levallois-Perret et dans les Hauts-de-Seine.</p>
+      <h3>Activité principale</h3>
+      <p>Plomberie — travaux de construction spécialisés. Forme d'exercice : commerciale, artisanale réglementée.</p>
+      <h3>Conventions collectives applicables</h3>
+      <ul>
+        <li>Ouvriers du bâtiment (entreprises occupant jusqu'à 10 salariés) — IDCC 1596</li>
+        <li>Cadres du bâtiment — IDCC 2420</li>
+      </ul>
+      <h3>Assurance professionnelle</h3>
+      <p>L'activité est couverte par une assurance responsabilité civile professionnelle et une garantie décennale souscrites auprès de <strong>À compléter</strong> (numéro de police, zone géographique de couverture).</p>
+      <h3>Certifications</h3>
+      <ul>
+        <li>RGE QualiPAC</li>
+        <li>Qualibat — Plomberie & sanitaire</li>
+        <li>Inscription au répertoire des métiers de la Chambre des Métiers et de l'Artisanat des Hauts-de-Seine</li>
+      </ul>
+    </section>
+
+    <section class="legal-section">
+      <h2>Propriété intellectuelle</h2>
+      <p>L'ensemble des contenus présents sur ce site (textes, photographies, identité visuelle, mise en page, code) est la propriété exclusive d'Elite Plomberie ou de ses ayants droit. Toute reproduction, représentation, modification ou exploitation, totale ou partielle, sans autorisation écrite préalable est interdite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.</p>
+      <p>Les marques et logos affichés à titre de certifications (RGE, Qualibat) restent la propriété de leurs détenteurs respectifs.</p>
+    </section>
+
+    <section class="legal-section">
+      <h2>Données <em>personnelles</em></h2>
+      <h3>Données collectées</h3>
+      <p>Les informations recueillies via le formulaire de devis (nom, prénom, e-mail, téléphone, ville, description du projet) sont nécessaires au traitement de votre demande. Elles sont destinées exclusivement à Elite Plomberie et ne sont en aucun cas transmises à des tiers à des fins commerciales.</p>
+      <h3>Base légale</h3>
+      <p>Le traitement repose sur votre consentement explicite (article 6.1.a du RGPD) lors de l'envoi du formulaire, ainsi que sur l'exécution de mesures précontractuelles prises à votre demande (article 6.1.b).</p>
+      <h3>Durée de conservation</h3>
+      <p>Vos données sont conservées pendant la durée nécessaire au traitement de votre demande, puis archivées conformément aux obligations légales (notamment fiscales et comptables, jusqu'à dix ans pour les chantiers réalisés au titre de la garantie décennale).</p>
+      <h3>Vos droits</h3>
+      <p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi « Informatique et Libertés » du 6 janvier 1978, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Vous pouvez exercer ces droits en nous contactant via le formulaire du site.</p>
+      <p>Vous disposez également du droit d'introduire une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener">CNIL</a> si vous estimez que le traitement de vos données ne respecte pas la réglementation.</p>
+    </section>
+
+    <section class="legal-section">
+      <h2>Cookies</h2>
+      <p>Ce site n'utilise aucun cookie publicitaire ni de traçage tiers. Seuls les cookies strictement nécessaires au bon fonctionnement du site peuvent être déposés. Aucun consentement n'est requis pour ces cookies techniques, conformément à la recommandation de la CNIL.</p>
+      <p>Si des outils de mesure d'audience (par exemple Google Analytics, Plausible, Matomo) venaient à être ajoutés, une bannière de consentement serait mise en place.</p>
+    </section>
+
+    <section class="legal-section">
+      <h2>Liens externes</h2>
+      <p>Le site peut contenir des liens vers des sites tiers (notamment WhatsApp, sites institutionnels). Elite Plomberie n'exerce aucun contrôle sur ces sites externes et décline toute responsabilité quant à leur contenu, leur politique de confidentialité ou leurs pratiques.</p>
+    </section>
+
+    <section class="legal-section">
+      <h2>Droit applicable</h2>
+      <p>Les présentes mentions légales sont régies par le droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux compétents seront ceux du ressort du siège d'Elite Plomberie.</p>
+    </section>
+
+    <section class="legal-section">
+      <h2>Crédits</h2>
+      <p>Conception, design et développement : Elite Plomberie. Typographies : Fraunces et Manrope (sous licence SIL Open Font License).</p>
+      <p style="font-size:13px; color:var(--muted); font-style:italic; font-family:var(--font-display); margin-top:24px;">Dernière mise à jour : avril 2026.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Elite Plomberie</span>
+    <a href="index.html">Retour à l'accueil</a>
+  </div>
+</footer>
+
+</body>
+</html>

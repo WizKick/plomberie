@@ -25,11 +25,13 @@
 {
   "@context": "https://schema.org",
   "@type": "Plumber",
-  "name": "Elite Plomberie",
+  "name": "ELITE PLOMBERIE",
+  "legalName": "ELITE PLOMBERIE SASU",
   "image": "",
-  "description": "Plomberie haut de gamme à Levallois-Perret et dans les Hauts-de-Seine. Rénovation, installation et dépannage premium.",
+  "description": "Plomberie haut de gamme à Levallois-Perret et dans les Hauts-de-Seine. Rénovation, installation et dépannage premium. Travaux d'installation d'eau et de gaz en tous locaux.",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "39 rue Gabriel Péri",
     "addressLocality": "Levallois-Perret",
     "postalCode": "92300",
     "addressRegion": "Hauts-de-Seine",
@@ -41,10 +43,19 @@
     {"@type": "City", "name": "Courbevoie"},
     {"@type": "City", "name": "Clichy"},
     {"@type": "City", "name": "Asnières-sur-Seine"},
-    {"@type": "City", "name": "Boulogne-Billancourt"}
+    {"@type": "City", "name": "Boulogne-Billancourt"},
+    {"@type": "City", "name": "Puteaux"},
+    {"@type": "City", "name": "Issy-les-Moulineaux"}
   ],
   "priceRange": "€€€",
-  "hasCredential": "Certification RGE"
+  "vatID": "FR50850729815",
+  "taxID": "850729815",
+  "identifier": [
+    {"@type": "PropertyValue", "propertyID": "SIREN", "value": "850729815"},
+    {"@type": "PropertyValue", "propertyID": "SIRET", "value": "85072981500017"}
+  ],
+  "hasCredential": "Certification RGE",
+  "foundingDate": "2019-05-13"
 }
 </script>
 
@@ -889,7 +900,7 @@
       <span class="logo-mark">E</span>
       <span>Elite Plomberie</span>
     </a>
-    <a href="#devis" class="nav-cta">Devis</a>
+    <a href="#devis" class="nav-cta" onclick="openModal(event)">Devis</a>
   </div>
 </nav>
 
@@ -1218,9 +1229,9 @@
         <div class="footer-brand">Elite Plomberie</div>
         <div class="footer-tag">Artisanat plomberie · Levallois-Perret</div>
         <div class="footer-info">
-          Levallois-Perret 92300<br/>
-          Hauts-de-Seine — Île-de-France<br/>
-          SIRET sur demande
+          39 rue Gabriel Péri<br/>
+          92300 Levallois-Perret<br/>
+          SIRET 850 729 815 00017
         </div>
       </div>
       <div>
@@ -1235,7 +1246,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Elite Plomberie</span>
-      <span>Mentions légales</span>
+      <a href="mentions-legales.html" style="color:var(--muted); text-decoration:none;">Mentions légales</a>
     </div>
   </div>
 </footer>
