@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#1a1a1a" />
 
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
 <!-- SEO -->
 <title>Plombier Levallois-Perret 92 — Elite Plomberie | Devis Gratuit</title>
 <meta name="description" content="Plombier à Levallois-Perret et dans le 92 — Elite Plomberie, artisan certifié RGE depuis 1998. Rénovation salle de bain, dépannage urgent, installation. Devis gratuit sous 48h. Intervention rapide Hauts-de-Seine." />
@@ -1387,6 +1396,9 @@
         </button>
       </div>
       <form id="quoteForm" onsubmit="submitForm(event)">
+        <input type="hidden" name="access_key" value="d640309b-6895-48e6-a35e-eb8a59e4dc3a" />
+        <input type="hidden" name="subject" value="Nouvelle demande de devis — Elite Plomberie" />
+        <input type="hidden" name="from_name" value="Elite Plomberie Site" />
         <div class="form-group">
           <label>Type de projet</label>
           <div class="radio-group">
@@ -1490,10 +1502,35 @@
       document.getElementById('quoteForm').reset();
     }, 300);
   }
-  function submitForm(e) {
+  async function submitForm(e) {
     e.preventDefault();
-    document.getElementById('formContent').style.display = 'none';
-    document.getElementById('formSuccess').classList.add('show');
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Envoi en cours…';
+
+    const data = Object.fromEntries(new FormData(form));
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const json = await res.json();
+      if (json.success) {
+        document.getElementById('formContent').style.display = 'none';
+        document.getElementById('formSuccess').classList.add('show');
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Envoyer ma demande';
+        alert('Une erreur est survenue. Merci de réessayer ou de nous contacter par WhatsApp.');
+      }
+    } catch (err) {
+      btn.disabled = false;
+      btn.textContent = 'Envoyer ma demande';
+      alert('Erreur réseau. Merci de réessayer.');
+    }
   }
 
   // ===== Before/After sliders =====
